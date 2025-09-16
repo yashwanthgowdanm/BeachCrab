@@ -24,13 +24,4 @@ Key knobs in `main_simulation.m` (adjust to taste):
 - spawn counts for obstacles / metallic / non‑metallic waste
 - robot parameters in `CrabRobot`: `normalSpeed`, `leapSpeed`, `turnRate`, `sensorRange`
 
-## How to Cite / Link Similar Work
-- MATLAB examples for **path planning** and **obstacle avoidance** are a great “Related work” link target.
-- If you want inspiration, search for beach‑cleaning robots (e.g., “BeBot”) and academic beach‑waste papers; list a couple in README as context.
-
-## License
-MIT (see `LICENSE`).
-
----
-
 © 2025 • BeachCrab — MATLAB mini‑sim
