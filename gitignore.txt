@@ -1,0 +1,32 @@
+# --- MATLAB / Simulink ---
+# Recoverable/temporary
+*.asv
+*.m~
+*~
+*.bak
+*.autosave
+*.log
+
+# Compiled / platform-specific
+*.mex*
+*.mexa64
+*.mexw32
+*.mexw64
+*.mexmaci64
+
+# Data & caches (keep if you *intend* to version data)
+*.mat
+*.slxc
+*.slprj/
+*.tmw
+
+# Models / projects (uncomment if you don't use Simulink/Projects)
+# *.mdl
+# *.slx
+# *.slxp
+# *.prj
+# *.mlproj
+
+# OS noise
+.DS_Store
+Thumbs.db

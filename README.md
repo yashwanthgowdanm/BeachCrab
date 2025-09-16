@@ -1,0 +1,46 @@
+# BeachCrab — Autonomous Beach Cleaning Robot (MATLAB Simulation)
+
+A tiny MATLAB project that simulates a beach-cleaning “crab” robot that roams a grid world, avoids obstacles, and collects **metallic** and **non‑metallic** waste while live‑plotting its state.
+
+## Features
+- Grid‑based world with randomly spawned obstacles and two waste types
+- Simple reactive navigation + heading control, with a temporary **leap** speed for escapes
+- Pickup logic that increments **metallic** and **non‑metallic** counters
+- Live visualization (`plotSimulation.m`) and an end‑of‑run summary
+
+## Files
+- `CrabRobot.m` — robot class: state (x, y, heading), kinematics, sensing, waste pickup
+- `main_simulation.m` — entry script: builds the world, runs the loop, tracking stats
+- `plotSimulation.m` — lightweight plotting of the robot and counters
+
+> ⚠️ Note: The copy I reviewed contained `...` placeholders where code seems redacted. Make sure your local files are complete before publishing so others can run the demo.
+
+## Quickstart
+1. Open MATLAB (R2020a+ recommended).
+2. Add the folder to the path: `addpath(genpath('BeachCrabApp'))`
+3. Run: `main_simulation`
+
+## Configuration
+Key knobs in `main_simulation.m` (adjust to taste):
+- `gridSize` — world size (e.g., 200)
+- spawn counts for obstacles / metallic / non‑metallic waste
+- robot parameters in `CrabRobot`: `normalSpeed`, `leapSpeed`, `turnRate`, `sensorRange`
+
+## Roadmap (nice-to-have before/after open‑sourcing)
+- Seeded RNG (`rng(42)`) for reproducible demos
+- A screenshot or short GIF of the sim in action
+- CI smoke test: `verLessThan('matlab','R2020a')` guard + quick run
+- Path‑planning baseline (PRM/RRT) vs. current reactive behavior
+- Unit tests for `collectWaste` and boundary clamping
+- Optional data export of run statistics to CSV
+
+## How to Cite / Link Similar Work
+- MATLAB examples for **path planning** and **obstacle avoidance** are a great “Related work” link target.
+- If you want inspiration, search for beach‑cleaning robots (e.g., “BeBot”) and academic beach‑waste papers; list a couple in README as context.
+
+## License
+MIT (see `LICENSE`).
+
+---
+
+© 2025 • BeachCrab — MATLAB mini‑sim
