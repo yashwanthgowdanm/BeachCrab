@@ -13,8 +13,6 @@ A tiny MATLAB project that simulates a beach-cleaning “crab” robot that roam
 - `main_simulation.m` — entry script: builds the world, runs the loop, tracking stats
 - `plotSimulation.m` — lightweight plotting of the robot and counters
 
-> ⚠️ Note: The copy I reviewed contained `...` placeholders where code seems redacted. Make sure your local files are complete before publishing so others can run the demo.
-
 ## Quickstart
 1. Open MATLAB (R2020a+ recommended).
 2. Add the folder to the path: `addpath(genpath('BeachCrabApp'))`
@@ -25,14 +23,6 @@ Key knobs in `main_simulation.m` (adjust to taste):
 - `gridSize` — world size (e.g., 200)
 - spawn counts for obstacles / metallic / non‑metallic waste
 - robot parameters in `CrabRobot`: `normalSpeed`, `leapSpeed`, `turnRate`, `sensorRange`
-
-## Roadmap (nice-to-have before/after open‑sourcing)
-- Seeded RNG (`rng(42)`) for reproducible demos
-- A screenshot or short GIF of the sim in action
-- CI smoke test: `verLessThan('matlab','R2020a')` guard + quick run
-- Path‑planning baseline (PRM/RRT) vs. current reactive behavior
-- Unit tests for `collectWaste` and boundary clamping
-- Optional data export of run statistics to CSV
 
 ## How to Cite / Link Similar Work
 - MATLAB examples for **path planning** and **obstacle avoidance** are a great “Related work” link target.
